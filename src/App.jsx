@@ -8,7 +8,6 @@ import Footer from './components/Footer'
 
 // Below-the-fold sections load lazily to keep first paint fast.
 const Architecture = lazy(() => import('./components/Architecture'))
-const Gallery = lazy(() => import('./components/Gallery'))
 const Skills = lazy(() => import('./components/Skills'))
 const EngineeringNotes = lazy(() => import('./components/EngineeringNotes'))
 const GitHub = lazy(() => import('./components/GitHub'))
@@ -25,7 +24,6 @@ export default function App() {
         <Experience />
         <Projects />
         <Suspense fallback={null}>
-          <Gallery />
           <Architecture />
           <Skills />
           <EngineeringNotes />

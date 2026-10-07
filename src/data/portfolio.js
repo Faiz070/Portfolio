@@ -13,55 +13,7 @@ export const profile = {
   resume: 'https://drive.google.com/file/d/1jqvAgtCTFFMn1tHZIsAUA3ZneBmSjjHX/view?usp=sharing', // put your file in /public
 }
 
-export const nav = ['About', 'Experience', 'Projects', 'Gallery', 'Skills', 'Contact']
-
-export const galleryPhotos = [
-  {
-    src: 'https://res.cloudinary.com/izwfqkck/image/upload/f_auto,q_auto/IMG_20240125_222746_723',
-    alt: 'Photo',
-    caption: 'Goa photo',
-  },
-  {
-    src: 'https://res.cloudinary.com/izwfqkck/image/upload/v1791350007/IMG-20251129-WA0054.jpg',
-    alt: 'photo',
-    caption: 'Project',
-  },
-  {
-    src: 'https://res.cloudinary.com/izwfqkck/image/upload/v1791350466/IMG-20251121-WA0054.jpg',
-    alt: 'photo',
-    caption: 'Send off photo',
-  },
-  {
-    src: 'https://res.cloudinary.com/izwfqkck/image/upload/v1791350600/IMG20241030154658.jpg',
-    alt: 'photo',
-    caption: 'Mumbai photo',
-  },
-  {
-    src: 'https://res.cloudinary.com/izwfqkck/image/upload/v1791350862/WhatsApp_Image_2026-08-18_at_4.23.33_PM_2.jpg',
-    alt: 'photo',
-    caption: 'Delhi photo',
-  },
-  {
-    src: 'https://res.cloudinary.com/izwfqkck/image/upload/v1791351124/600702f2-f0ac-4019-a3d6-4ea0f3a475d8.png',
-    alt: 'photo',
-    caption: 'Felicitation ceremony photo',
-  },
-  {
-    src: 'https://res.cloudinary.com/izwfqkck/image/upload/v1791351267/20240123_145158.jpg',
-    alt: 'photo',
-    caption: 'Group photo',
-  },
-  {
-    src: 'https://res.cloudinary.com/izwfqkck/image/upload/v1791351450/IMG-20250824-WA0011.jpg',
-    alt: 'photo',
-    caption: 'Group photo',
-  },
-  {
-    src: 'https://res.cloudinary.com/izwfqkck/image/upload/v1791351601/IMG-20241021-WA0008.jpg',
-    alt: 'photo',
-    caption: 'Achievement photo',
-  },
-]
+export const nav = ['About', 'Experience', 'Projects', 'Skills', 'Contact']
 
 export const philosophy = [
   { title: 'Reliability', text: 'Validate inputs and handle failures at API boundaries so invalid requests fail clearly and predictably.' },
