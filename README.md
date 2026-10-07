@@ -1,4 +1,4 @@
-# Engineer Portfolio
+# Faiz Portfolio
 
 React + Vite + Tailwind CSS + Framer Motion + Lucide.
 
