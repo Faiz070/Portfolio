@@ -47,7 +47,7 @@ export default function Navbar() {
         <div className="flex items-center gap-1">
           <a className={`${icon} hidden sm:block`} href={profile.github} aria-label="GitHub" target="_blank" rel="noreferrer"><Github size={18} /></a>
           <a className={`${icon} hidden sm:block`} href={profile.linkedin} aria-label="LinkedIn" target="_blank" rel="noreferrer"><Linkedin size={18} /></a>
-          <a href={profile.resume} className="btn btn-ghost ml-2 hidden !py-1.5 md:inline-flex">Resume</a>
+          <a href={profile.resume} className="btn btn-ghost ml-2 hidden !py-1.5 md:inline-flex" target="_blank" rel="noreferrer">Resume ↗</a>
           <button className={`${icon} md:hidden`} onClick={() => setOpen(!open)} aria-expanded={open} aria-label="Toggle menu">
             {open ? <X size={22} /> : <Menu size={22} />}
           </button>
@@ -59,11 +59,13 @@ export default function Navbar() {
             initial={{ height: 0, opacity: 0 }} animate={{ height: 'auto', opacity: 1 }} exit={{ height: 0, opacity: 0 }}
             className="overflow-hidden px-5 pb-4 md:hidden"
           >
-            {[...nav, 'Resume'].map((item) => (
+            {[...nav, 'Resume ↗'].map((item) => (
               <li key={item}>
                 <a
-                  href={item === 'Resume' ? profile.resume : `#${item.toLowerCase()}`}
+                  href={item === 'Resume ↗' ? profile.resume : `#${item.toLowerCase()}`}
                   onClick={() => setOpen(false)}
+                  target={item === 'Resume ↗' ? '_blank' : undefined}
+                  rel={item === 'Resume ↗' ? 'noreferrer' : undefined}
                   className="block border-b border-line py-3 text-mute hover:text-ink"
                 >{item}</a>
               </li>

@@ -1,11 +1,11 @@
 // Single source of truth for all content. Replace every PLACEHOLDER before publishing.
 export const profile = {
   name: 'Faiz Sadarealam Ansari',
-  title: 'Software Engineer',
-  label: 'SOFTWARE ENGINEER',
-  headline: 'Building reliable software systems that solve real problems.',
+  title: 'Java Developer · Backend Developer · Full Stack Developer',
+  label: 'JAVA DEVELOPER / BACKEND / FULL STACK',
+  headline: 'Java developer focused on backend systems and full-stack applications.',
   intro:
-    'I’m a software engineer focused on building scalable web applications, backend systems, APIs, and intelligent software solutions.',
+    'I build Java and Spring Boot backend services, REST APIs, and database-backed applications, with hands-on React experience across the full stack.',
   email: 'fansari4326@gmail.com', // PLACEHOLDER
   github: 'https://github.com/Faiz070', // PLACEHOLDER
   githubUser: 'Faiz070', // set to a real username to enable live GitHub data
@@ -44,7 +44,7 @@ export const galleryPhotos = [
   {
     src: 'https://res.cloudinary.com/izwfqkck/image/upload/v1791351124/600702f2-f0ac-4019-a3d6-4ea0f3a475d8.png',
     alt: 'photo',
-    caption: 'felicitation ceremony photo',
+    caption: 'Felicitation ceremony photo',
   },
   {
     src: 'https://res.cloudinary.com/izwfqkck/image/upload/v1791351267/20240123_145158.jpg',
@@ -64,18 +64,18 @@ export const galleryPhotos = [
 ]
 
 export const philosophy = [
-  { title: 'Reliability', text: 'Build predictable systems with proper error handling and validation.' },
-  { title: 'Simplicity', text: 'Prefer simple architecture and maintainable code.' },
-  { title: 'Performance', text: 'Optimize based on actual measurements rather than assumptions.' },
-  { title: 'Continuous Improvement', text: 'Build, measure, learn and improve.' },
+  { title: 'Reliability', text: 'Validate inputs and handle failures at API boundaries so invalid requests fail clearly and predictably.' },
+  { title: 'Performance', text: 'Measure query and API latency first; optimize the operation shown to be slow rather than guessing.' },
+  { title: 'Maintainability', text: 'Keep business rules separate from controllers and persistence so each layer has a clear responsibility.' },
+  { title: 'Testing', text: 'Test critical business logic and API contracts before deployment, including expected failure cases.' },
 ]
 
 export const about = {
   text: [
-    'I work across software engineering, full-stack and backend development, API development, and database design, and I apply AI/ML to practical problems.',
-    'I’m drawn to system architecture: how components fit together, where they fail, and how to keep them understandable as they grow.',
+    'I’m a Java developer focused on backend development with Spring Boot, REST APIs, and relational databases. I also build full-stack features with React and Node.js.',
+    'My projects include API-driven applications and applied machine-learning work. I document the choices I made, the trade-offs I considered, and the results I can support with evidence.',
   ],
-  focus: ['Java', 'Spring Boot', 'React', 'REST APIs', 'PostgreSQL', 'System Design', 'AI/ML Integration'],
+  focus: ['Java', 'Spring Boot', 'Backend Development', 'REST APIs', 'PostgreSQL', 'React', 'Full Stack Development'],
 }
 
 // Only list real roles. Add metrics only if they are true and measurable.
@@ -87,7 +87,7 @@ export const experience = [
     location: 'Pune, India', // PLACEHOLDER
     points: [
       'Developed REST APIs for business workflows.',
-      'Optimized database queries to improve application performance.',
+      'Optimized PostgreSQL queries and API response handling, reducing unnecessary database operations in internal workflows.',
       'Designed reusable React components for internal applications.',
       'Integrated third-party APIs into backend services.',
     ],
@@ -100,12 +100,12 @@ export const experience = [
 export const projects = [
   {
     name: 'UPI Fraud Detection',
-    summary: 'Machine learning system designed to identify fraudulent transaction patterns using supervised learning and class-imbalance handling.',
+    summary: 'XGBoost-based fraud detection pipeline trained on the IEEE-CIS dataset, achieving 0.949 ROC-AUC and 0.724 PR-AUC after class-imbalance handling and threshold optimization.',
     problem: 'Fraudulent transactions are rare, so a naive model can look accurate while missing most fraud.',
     solution: 'A pipeline that engineers features, balances classes, trains XGBoost, and tunes the decision threshold.',
     decisions: ['Resample only the training data to avoid leakage', 'Choose the threshold from precision/recall trade-offs, not a default 0.5', 'Evaluate with Precision, Recall, F1 and PR-AUC rather than accuracy'],
     challenges: 'Highly imbalanced data makes accuracy misleading and demands careful evaluation.',
-    results: ['Results show improved detection of fraudulent transactions with a tuned decision threshold, achieving a balance between precision and recall.'],
+    results: ['On the IEEE-CIS dataset, the XGBoost pipeline achieved 0.949 ROC-AUC and 0.724 PR-AUC after class-imbalance handling and threshold optimization.'],
     resultImages: [
       {
         src: 'https://res.cloudinary.com/izwfqkck/image/upload/v1791352320/threshold_tunning.png',
@@ -151,12 +151,12 @@ export const projects = [
   },
   {
     name: 'Crop Vegetation Analysis',
-    summary: 'Computer vision system for crop classification and vegetation analysis using deep learning and image processing.',
+    summary: 'MobileNetV2-based crop classification pipeline achieving 97.78% test accuracy across four crop/disease classes.',
     problem: 'Identifying crops and analysing vegetation from images by hand is slow and inconsistent.',
     solution: 'An image pipeline that preprocesses images, removes background, classifies crops with a CNN, then analyses vegetation.',
     decisions: ['Remove background before classification to reduce visual noise', 'Use MobileNetV2 as a compact, pre-trained CNN backbone', 'Use K-Means for vegetation segmentation'],
     challenges: 'Variability in crop images due to lighting, angles, and backgrounds makes classification challenging; background removal and robust feature extraction are critical.',
-    results: ['Results show improved crop classification accuracy and effective vegetation analysis, enabling faster and more consistent assessments of crop health.'],
+    results: ['The MobileNetV2 classifier achieved 97.78% test accuracy across four crop/disease classes.'],
     resultImages: [
       {
         src: 'https://res.cloudinary.com/izwfqkck/image/upload/v1791352903/Screenshot_2025-08-10_190547.png',
@@ -180,13 +180,13 @@ export const projects = [
       },
       {
         src: 'https://res.cloudinary.com/izwfqkck/image/upload/v1791352830/Screenshot_2025-09-23_213307.png',
-        alt: 'Class activation maps for crop classification',
-        caption: 'Class activation maps highlighting the regions of the input images that contributed most to the model\'s crop classification decisions, providing insights into the model\'s interpretability.',
+        alt: 'Confusion matrix for crop classification',
+        caption: 'Confusion matrix showing classification performance across Black Rot, ESCA, Healthy and Leaf Blight classes.',
       },
       {
         src: 'https://res.cloudinary.com/izwfqkck/image/upload/v1791352815/Screenshot_2025-09-24_210610.png',
-        alt: 'Class activation maps for crop classification',
-        caption: 'Crop classification results with class activation maps, showing the model\'s predictions and the corresponding regions of interest in the input images that influenced those predictions.',
+        alt: 'Crop classification prediction visualization',
+        caption: 'Prediction visualization highlighting image regions alongside the model’s crop/disease classification.',
       },
     ],
     tech: ['Python', 'TensorFlow', 'MobileNetV2', 'K-Means', 'OpenCV'],
@@ -202,12 +202,12 @@ export const projects = [
   },
   {
     name: 'Farm Expense Tracker',
-    summary: 'Web application for managing agricultural expenses, yield data, and farm profitability.',
+    summary: 'Full-stack agriculture application for recording expenses and yields, calculating profitability, and exposing data through REST APIs.',
     problem: 'Farm costs and yields are often tracked in scattered notes, making profitability hard to see.',
     solution: 'A full-stack app where expenses and yield data are recorded through an API and summarized for the user.',
     decisions: ['API-first design separating the React client from persistence', 'Document model in MongoDB for flexible farm records'],
     challenges: 'Farmers need a simple interface to enter data, and the system must handle concurrent updates and provide accurate summaries.',
-    results: ['Results show improved farm record-keeping and profitability analysis, enabling farmers to make informed decisions based on accurate expense and yield data.'],
+    results: ['The application records expenses and yields through REST APIs and calculates farm profitability from the saved data.'],
     tech: ['React', 'Node.js', 'Express', 'MongoDB', 'REST API'],
     flow: [
       { label: 'React', note: 'Client UI for entering and viewing data.' },
@@ -219,38 +219,14 @@ export const projects = [
   },
 ]
 
-export const systemLayers = [
-  { name: 'Client', sub: 'React App' },
-  { name: 'REST API', sub: 'Routing · Contracts' },
-  { name: 'Service Layer', sub: 'Business Logic' },
-  { name: 'Database', sub: 'PostgreSQL / MongoDB' },
-]
-// `layers` = indexes of systemLayers this concern touches.
-export const systemConcerns = [
-  { name: 'Authentication', layers: [1], text: 'Verify identity at the API boundary.' },
-  { name: 'Validation', layers: [0, 1], text: 'Validate input early, on both client and server.' },
-  { name: 'Logging', layers: [1, 2], text: 'Structured logs make failures traceable.' },
-  { name: 'Caching', layers: [1, 3], text: 'Cache read-heavy data; plan invalidation first.' },
-  { name: 'Database Indexing', layers: [3], text: 'Index for real query patterns and verify with query plans.' },
-  { name: 'Error Handling', layers: [1, 2], text: 'Consistent error responses; fail predictably.' },
-]
-
 export const skills = {
   Languages: ['Java', 'JavaScript', 'Python', 'C++', 'SQL'],
   Backend: ['Spring', 'Spring Boot', 'Node.js', 'Express.js', 'REST APIs'],
   Frontend: ['React', 'HTML', 'CSS', 'Tailwind CSS'],
   Databases: ['PostgreSQL', 'MySQL', 'MongoDB'],
-  'AI / ML': ['Python', 'Scikit-learn', 'XGBoost', 'TensorFlow', 'Pandas'],
+  'Machine Learning Projects': ['Python', 'Scikit-learn', 'XGBoost', 'TensorFlow', 'Pandas'],
   Tools: ['Git', 'GitHub', 'Postman', 'VS Code', 'Docker'],
 }
-
-// Placeholders: replace `href` with real posts when published.
-export const notes = [
-  { title: 'Designing Maintainable REST APIs', tag: 'Backend', read: 'Draft', href: '#' },
-  { title: 'Handling Class Imbalance in Fraud Detection', tag: 'ML', read: 'Draft', href: '#' },
-  { title: 'Spring Boot Dependency Injection Explained', tag: 'Java', read: 'Draft', href: '#' },
-  { title: 'Building Production-Ready Backend Services', tag: 'Systems', read: 'Draft', href: '#' },
-]
 
 // Static fallback; GitHub API data replaces it when `githubUser` is set. No fabricated stats.
 export const fallbackRepos = [

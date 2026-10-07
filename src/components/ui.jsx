@@ -13,7 +13,7 @@ export const Reveal = ({ children, delay = 0, className = '' }) => (
 )
 
 export const Section = ({ id, label, title, children }) => (
-  <section id={id} className="mx-auto max-w-6xl px-5 py-20 sm:px-8 md:py-28">
+  <section id={id} className="mx-auto max-w-6xl px-5 py-14 sm:px-8 md:py-20">
     <Reveal>
       <p className="label">{label}</p>
       <h2 className="mt-3 max-w-3xl text-3xl font-semibold tracking-tight md:text-5xl">{title}</h2>
