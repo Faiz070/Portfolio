@@ -1,6 +1,6 @@
 # Faiz Portfolio
 
-React + Vite + Tailwind CSS + Framer Motion + Lucide.
+Personal software engineering portfolio built with React and Tailwind CSS.
 
 ## Install
     npm install
